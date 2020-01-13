@@ -1,7 +1,7 @@
 # Landing Page Forms
 
 ## Capital One: Sign In 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae pariatur et natus, nesciunt saepe soluta similique laboriosam rem ducimus. Dolorum labore laboriosam animi nisi facere mollitia architecto numquam, sed laudantium.
+This is a clone mock up of the sign in form for Capital One's home page.
 
 ## TECHNOLOGIES USED: 
 html tables, html5, css3, mobile responsive, npm, webpack, web accessibility, NVDA, GITHUB , lighthouse audit, NETLIFY.
