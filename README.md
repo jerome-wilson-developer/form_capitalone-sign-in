@@ -16,6 +16,5 @@ Github pages link:
 https://jerome-wilson-developer.github.io/forms_capitalone-sign-in/
 
 Netlify link: 
-https://peaceful-swirles-ea6a29.netlify.com/
-
+https://capital-one-sign-in-form.netlify.com/
 
