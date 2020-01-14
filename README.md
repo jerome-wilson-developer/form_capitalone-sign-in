@@ -1,7 +1,7 @@
 # Landing Page Forms
 
-## Capital One: Sign In 
-This is a clone mock up of the sign in form for Capital One's home page.
+## Capital One: Sign In form
+This is a clone mock up of the sign in form for Capital One's home page. It includes a "forgot username/password link, and, a "setup online access" link. Their home page is also a site map with quick links to many of their most commonly used pages.
 
 ## TECHNOLOGIES USED: 
 html tables, html5, css3, mobile responsive, npm, webpack, web accessibility, NVDA, GITHUB , lighthouse audit, NETLIFY.
