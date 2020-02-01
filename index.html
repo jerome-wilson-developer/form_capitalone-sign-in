@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>CapitalOne: Sign-In form</title>
 </head>
@@ -36,29 +38,71 @@
         </div> -->
     </header>
 
+    <!-- begin the container for this section#1's content -->
+    <section class="full-screen-container" 
+    style="background-color:#fafafa;">
 
-    <section class="full-screen-container" style="background-color:#fafafa;">
-        <article class="login-container" style="border:1px solid #C9CED2; background-color:#ffffff; margin-top:50px;">
-            <form style="padding:30px 40px;">
-                <div style="text-align:center;">
+        <!-- begin the container for this article#1's content -->
+        <article class="login-container" 
+        style="border:1px solid #C9CED2; 
+        background-color:#ffffff; margin-top:50px;">
+            
+            <!-- begin the container for this form's content -->
+            <form id="form" action="/" method="GET" 
+            style="padding:30px 40px;">
+            <!-- <form style="padding:30px 40px;"> -->
+
+                <!-- begin the container for this signIn icon and the signIn text -->
+                <article style="text-align:center;">
                     <img src="images/avatar-Sign-In.png" 
                     width="50" height="50"
                     alt="avatar of a man's head" 
                     style="text-align:center;"/>
                     <p style="font-size:18px; 
                     font-weight:600;
-                    font-family:sans-serif; margin-top:10px; margin-bottom:50px; text-align:center;">
+                    font-family:sans-serif; margin-top:10px; 
+                    margin-bottom:50px; text-align:center;">
                     Sign In
                     </p>
-                </div>                
-                <div class="input-group" style="">
-                    <label style="font-size:14px; 
+                </article>    
+                <!-- end the container for this signIn icon and the signIn text -->     
+
+
+
+
+<!-- <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>            
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button type="submit">Submit</button>
+    </form>    -->
+
+            <!-- the container used to show any error messages to the user during the signIn process -->
+            <div id="error" style="margin-bottom:20px;"></div>
+
+            <!-- <form id="form" action="/" method="GET">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>            
+                </div> -->
+
+                <article class="input-container">
+                    <label for="user-email-address" 
+                    style="font-size:14px; 
                     color:#393939; font-weight:500;">
                     <!-- color:#677DA8; -->
-                        Username
+                        User's email address 
                     </label> 
                     <!-- <i class="fas fa-unlock-alt"></i> -->
-                    <input type="text"
+                    <input id="email" name="email" 
+                    type="email" required autofocus
                     style="background-color:#FFFFFF;  
                     border:2px solid #CFCCCF; 
                     color:gray; border-radius:3px;">
@@ -66,14 +110,23 @@
                     <!-- style="background-color:#E8F0FE; #CFCCCF; 
                     border:2px solid #39AAD3; gray; #E8F0FE; 
                     color:gray; border-radius:3px;"> -->
+                </article>
+
+                <!-- <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
                 </div>
-                <div class="input-group">
-                    <label style="font-size:14px; 
+                <button type="submit">Submit</button> -->
+                <article class="input-container">
+                    <label for="password" 
+                    style="font-size:14px; 
                     color:#393939; font-weight:500;">
+                        <!-- Password ( minimum 8 characters ) -->                        
                         Password
                     </label> 
                     <!-- <i class="fas fa-unlock-alt"></i> -->
-                    <input type="password"
+                    <input type="password" id="password" 
+                    name="password" required autofocus
                     style="background-color:#FFFFFF;  
                     border:2px solid #CFCCCF; 
                     color:gray; border-radius:3px;">
@@ -81,43 +134,61 @@
                     <!-- style="background-color:#E8F0FE; #CFCCCF; 
                     border:2px solid #39AAD3; gray; #E8F0FE; 
                     color:gray; border-radius:3px;"> -->
-                </div>                       
+                </article>
+                
+                
                 <!-- checkbox <p style="font-size:14px; 
                 color:#677DA8; font-weight:500;">
                     Remember Me
                 </p> -->
-                <button type="submit" class="login-button"
+
+                
+                <!-- <button type="submit">Submit</button> -->
+                <button type="submit" class="submit-button"
                 style="background-color:#128020; 
                 color:#ffffff; font-weight:700; 
                 letter-spacing:3px; border-radius:3px;
                 font-size:18px; border:none;">
                     Sign In
                 </button>
+
+
                 <p>
                     <a href="https://verified.capitalone.com/signinhelp.html#/sign-in-help?client=SIC" 
-                    style="font-size:14px; color:#677DA8; font-weight:500; text-decoration:none; text-align:center;">
+                    style="font-size:14px; color:#677DA8; 
+                    font-weight:500; text-decoration:none; 
+                    text-align:center;">
                     Forgot Username or Password?
                     </a>
                 </p>   
                 <p>
                     <a href="https://verified.capitalone.com/enroll/#/pii?originatorId=SIC"
-                    style="font-size:14px; color:#677DA8; font-weight:500; text-decoration:none;">
+                    style="font-size:14px; color:#677DA8; 
+                    font-weight:500; text-decoration:none;">
                         Set Up Online Access
                     </a>
                 </p>
             </form>
-        </article>
-    </section>
+            <!-- end the container for this form's content -->
 
+        </article>
+        <!-- end the container for this article#1's content -->
+
+    </section>
+    <!-- end the container for this section#1's content -->
     
-    <section style="background-color:#fafafa; text-align:center; margin-top:30px; margin-bottom:100px;">
+    <!-- begin the container for this section#2's content -->
+    <section style="background-color:#fafafa; 
+    text-align:center; margin-top:30px; 
+    margin-bottom:100px;">
         <p style="font-size:14px;">Looking for these accounts?</p>
         <a href="https://verified.capitalone.com/sic-ui/#/otherProducts"
         style="font-size:14px; color:#677DA8; 
         font-weight:500; text-decoration:none;">
-            Business or Commercial
+            Business, Commercial, and Investing Accounts
         </a>
     </section>
+    <!-- end the container for this section#2's content -->
 
 <footer style="margin:0px; 
 padding:10px 50px 0px 50px;">
@@ -128,7 +199,8 @@ padding:10px 50px 0px 50px;">
         <li><a href="https://www.capitalone.com/privacy">
             Privacy
         </a></li>
-        <li><a href="https://www.capitalone.com/applications/identity-protection/commitment/">Security
+        <li><a href="https://www.capitalone.com/applications/identity-protection/commitment/">
+            Security
         </a></li>
         <li><a href="https://www.capitalone.com/legal/terms-conditions">
             Terms & Conditions
@@ -176,7 +248,10 @@ padding:10px 50px 0px 50px;">
     </ul>
 </footer>
 
-<section style="display:flex; flex-direction:row; justify-content:space-between; padding:15px 40px 0px 40px; background-color:#dddddd; margin:0px;">
+<section style="display:flex; flex-direction:row; 
+justify-content:space-between; 
+padding:15px 40px 0px 40px; 
+background-color:#dddddd; margin:0px;">
     <div>
         <a href="https://www.capitalone.com/">
             <img src="images/logo-capitalone-216x74-small.png" 
@@ -230,5 +305,5 @@ padding:10px 50px 0px 50px;">
     <h3 class="login-title">
         Welcome back ...
     </h3>             -->
-</body style="font-family:sans-serif;">
+</body>
 </html>

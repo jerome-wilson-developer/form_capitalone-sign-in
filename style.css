@@ -42,27 +42,27 @@ form{
     font-size: 2.0em;
     font-weight: normal;
 }
-.input-group{
+.input-container{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.input-group label{
+.input-container label{
     color: gray;
     font-weight: lighter;
     font-size: 1.5em;
     margin-bottom: 7px;
 }
-.input-group input{
-    font-size: 1.5em;
-    padding: .1em .25em;
+.input-container input{
+    font-size: 1.0em;
+    padding: 5px;
     /* background-color: hsla(201,100%,91%,0.7); */
     /* border: 1px solid hsl(201,100%,6%); */
     /* border: 1px solid blue; */
     outline: none;
     /* border-radius: 5px; */
     /* color: blue; */
-    font-weight: lighter;
+    font-weight: 500;
 }
 .input-group input:focus{
     /* border: 1px solid hsl(201,100%, 50%); */
@@ -70,7 +70,7 @@ form{
     /* outline: none; */
 }
 
-.login-button{
+.submit-button{
     padding: 10px 30px;
     width: 100%;
     border-radius: 5px;
@@ -83,10 +83,10 @@ form{
     margin-top: 20px;
     cursor: pointer;
 }
-.login-button:hover{
+.submit-button:hover{
     background-color: hsla(201,100%,50%,0.3);
 }
-.login-button:focus{
+.submit-button:focus{
     background-color: hsla(201,100%,50%,0.5);
 }
 
